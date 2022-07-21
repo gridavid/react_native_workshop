@@ -8,7 +8,7 @@ import {
   FlatList,
 } from "react-native";
 
-// get data from this URL!
+!
 const movieURL = "https://reactnative.dev/movies.json";
 
 export default  function App  () {
