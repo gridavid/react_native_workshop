@@ -29,7 +29,6 @@ export default  function App  () {
       .finally(() => setLoading(false)); 
   }, []);
 
-  // Also get call asynchronous function
   async function getMoviesAsync() {
     try {
       let response = await fetch(movieURL);
