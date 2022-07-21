@@ -1,8 +1,8 @@
 import {View, Text} from "react-native"
-export default function Reciepts() {
+export default function Receipts() {
     return (
         <View>
-            <Text>Reciepts</Text>
+            <Text>Receipts</Text>
         </View>
     )
 }
