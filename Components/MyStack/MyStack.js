@@ -1,6 +1,5 @@
 import { createStackNavigator } from '@react-navigation/stack';
-import { StatusBar } from 'expo-status-bar';
-import {  View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import Home from '../Home/Home';
 import Food from '../Food/Food';
 
@@ -9,14 +8,28 @@ import Receipts from '../Receipts/Receipts';
 
 const Stack = createStackNavigator();
 
-export default function MyStack(){
-    return(
+export default function MyStack() {
+    return (
         <Stack.Navigator>
-            <Stack.Screen name = "Home" component = {Home} />
-            <Stack.Screen name = "Receipts" component = {Receipts} />
-            <Stack.Screen name = "Food" component = {Food} />
-            <Stack.Screen name = "Drink" component = {Drink} />
-            
+            <Stack.Screen options={header}
+                name="Home"
+                component={Home} />
+            <Stack.Screen options={header} name="Receipts" component={Receipts} />
+            <Stack.Screen options={header} name="Food" component={Food} />
+            <Stack.Screen options={header} name="Drink" component={Drink} />
+
         </Stack.Navigator>
     )
+}
+
+const header = {
+    headerStyle: {
+        backgroundColor: '#f4511e',
+        
+    },
+    headerTitleAlign: 'center',
+    headerTintColor: '#fff',
+    headerTitleStyle: {
+        fontWeight: 'bold',
+    },
 }

@@ -4,13 +4,13 @@ export default function Home({ navigation }) {
     return (
         <View style={styles.container}>
             <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Food'); }}>
-                <Text> Food</Text>
+                <Text style={styles.btntxt}> Food</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Drink'); }}>
-                <Text> Drink</Text>
+                <Text style={styles.btntxt}> Drink</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Receipts'); }}>
-                <Text> Receipts</Text>
+                <Text style={styles.btntxt}> Receipts</Text>
             </TouchableOpacity>
         </View>
     )
@@ -29,10 +29,15 @@ const styles = StyleSheet.create({
     button: {
         height: 0.1 * Dimensions.get('window').height,
         width: 0.75 * Dimensions.get('window').width,
-        backgroundColor: '#70C19A',
-        borderRadius: 10,
+        backgroundColor: '#f4511e',
+        borderRadius: 40,
         alignItems: 'center',
         justifyContent: 'center',
         marginTop: 25,
+        
     },
+    btntxt: {
+        color: '#ffffff',
+        fontSize:20,
+    }
 })
