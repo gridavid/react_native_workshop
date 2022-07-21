@@ -9,7 +9,7 @@ import {
 } from "react-native";
 
 !
-const movieURL = "https://reactnative.dev/movies.json";
+const FoodURL = "https://reactnative.dev/movies.json";
 
 export default  function App  () {
   const [isLoading, setLoading] = useState(true);
