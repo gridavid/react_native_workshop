@@ -1,31 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {  View } from 'react-native';
+import Food from './Components/Food/Food';
+import Home from './Components/Home/Home';
+import Drink from './Components/Drink/Drink';
+import Reciepts from './Components/Reciepts/Reciepts';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <View style={{
-        width: 100,
-        height: 100,
-        backgroundColor: 'orange'
-      }}><Text>sfsdfds</Text></View>
+    <View >
+        <Home />
+        <Food />
+        <Drink />
+        <Reciepts />
+
       <StatusBar style="auto" />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#dbc8f7',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  button: {
-    width: 100,
-        height: 100,
-        backgroundColor: 'orange',
-        borderRadius:240,
-  }
-});
