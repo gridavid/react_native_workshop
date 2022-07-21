@@ -1,20 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import {  View } from 'react-native';
-import Food from './Components/Food/Food';
-import Home from './Components/Home/Home';
-import Drink from './Components/Drink/Drink';
-import Reciepts from './Components/Reciepts/Reciepts';
+import { NavigationContainer, StackActions } from '@react-navigation/native';
+import MyStack from './Components/MyStack/MyStack';
+import 'react-native-gesture-handler';
+
 
 export default function App() {
   return (
-    <View >
-        <Home />
-        <Food />
-        <Drink />
-        <Reciepts />
-
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <MyStack />
+    </NavigationContainer>
   );
 }
 
