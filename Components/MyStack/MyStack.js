@@ -23,13 +23,5 @@ export default function MyStack() {
 }
 
 const header = {
-    headerStyle: {
-        backgroundColor: '#f4511e',
-        
-    },
-    headerTitleAlign: 'center',
-    headerTintColor: '#fff',
-    headerTitleStyle: {
-        fontWeight: 'bold',
-    },
+        headerShown: false
 }

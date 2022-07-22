@@ -19,6 +19,8 @@ export default function Home({ navigation }) {
 
 const styles = StyleSheet.create({
     container: {
+        height: Dimensions.get('window').height,
+        width: Dimensions.get('window').width,
         flex: 1,
         justifyContent: 'center',
         paddingTop: 10,
