@@ -1,6 +1,4 @@
 import { createStackNavigator } from '@react-navigation/stack';
-import { createStackNavigator } from '@react-navigation/stack';
-//import FoodComp from '../Food_alt/FoodComp';
 import Drink from '../Drink/Drink';
 import Receipts from '../Receipts/Receipts';
 import Home from "../Home/Home";
