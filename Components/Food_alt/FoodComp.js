@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import FoodDetails from "./FoodDetails";
-import {  View , Text , Image , TextInput , Button } from 'react-native';
+import {  View , Button } from 'react-native';
 
 export default function FoodComp()  {
     const [mealData, setMealData] = useState(null);

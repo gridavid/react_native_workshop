@@ -1,7 +1,8 @@
 import { createStackNavigator } from '@react-navigation/stack';
-import Home from '../Home/Home';
+//import FoodComp from '../Food_alt/FoodComp';
 import Drink from '../Drink/Drink';
 import Receipts from '../Receipts/Receipts';
+import Home from "../Home/Home";
 
 
 const Stack = createStackNavigator();

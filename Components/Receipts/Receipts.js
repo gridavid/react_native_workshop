@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Box, FlatList, Center, NativeBaseProvider, Text , Image} from "native-base";
 
-
-export default function CoffeeAutonomous() {
+export default function Reciepts() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -21,8 +20,8 @@ export default function CoffeeAutonomous() {
   const renderItem = ({ item }) => {
     return (
       <Box px={5} py={2} rounded="md" bg="primary.300" my={1}>
-        {item.title}
-        <Image style={{ width : 200, height : 200}} alt="food_img" source={item.photoUrl}/>
+        {item.title} {item.id}
+        <Image style={{ width : 200, height : 200}} alt="food_img" source={{uri:item.photoUrl}}/>
       </Box>
     );
   };
@@ -30,7 +29,7 @@ export default function CoffeeAutonomous() {
   return (
     <NativeBaseProvider>
       <Center flex={1}>
-      <Box> Fetch API</Box>
+      <Box> Recieps</Box>
         {loading && <Box>Loading..</Box>}
         {data && (
           <FlatList

@@ -3,6 +3,7 @@ import MyStack from './Components/MyStack/MyStack';
 import 'react-native-gesture-handler';
 
 
+
 export default function App() {
   return (
     <NavigationContainer>
