@@ -6,8 +6,8 @@ export default function Home({ navigation }) {
             <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Food'); }}>
                 <Text style={styles.btntxt}> Food</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Drink'); }}>
-                <Text style={styles.btntxt}> Drink</Text>
+            <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Coffee'); }}>
+                <Text style={styles.btntxt}> Coffee</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Receipts'); }}>
                 <Text style={styles.btntxt}> Receipts</Text>
