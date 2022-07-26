@@ -16,14 +16,6 @@ export default function Reciepts() {
         fetchData();
     }, []);
 
-    const renderItem = ({ item }) => {
-        return (
-            <View px={5} py={2} rounded="md" bg="#ffffff" my={1}>
-                <Text>{item.title}</Text>
-                <Image style={styles.image} alt="food_img" source={{ uri: item.image }} />
-            </View>
-        );
-    };
 
     return (
         <ScrollView>
