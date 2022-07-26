@@ -12,6 +12,9 @@ export default function Home({ navigation }) {
             <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Receipts'); }}>
                 <Text style={styles.btntxt}> Receipts</Text>
             </TouchableOpacity>
+            <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Meal Plan'); }}>
+                <Text style={styles.btntxt}> Meal Plan</Text>
+            </TouchableOpacity>
         </View>
     )
 }
