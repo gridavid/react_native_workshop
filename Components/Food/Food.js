@@ -1,13 +1,4 @@
-import React, { useState, useEffect } from "react";
-import {  View , Text ,  } from 'react-native';
-import {
-  StyleSheet,
-  Text,
-  View,
-  SafeAreaView,
-  ActivityIndicator,
-  FlatList,
-} from "react-native";
+import {Text,View} from "react-native";
 
 
 
