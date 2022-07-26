@@ -12,7 +12,7 @@ export default function MyStack(){
         <Stack.Navigator>
             <Stack.Screen name = "Home" component = {Home} />
             <Stack.Screen name = "Receipts" component = {Receipts} />
-            <Stack.Screen name = "Drink" component = {Coffee} />
+            <Stack.Screen name = "Coffee" component = {Coffee} />
             <Stack.Screen name = "Food" component = {Food} />
             <Stack.Screen name = "Meal Plan" component = {FoodComp} />
         </Stack.Navigator>
