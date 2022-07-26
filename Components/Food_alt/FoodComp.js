@@ -25,7 +25,7 @@ export default function FoodComp()  {
       return (
           <ScrollView>
               <ScrollView>
-                  <Button onPress={getMealData} title="meal plan">
+                  <Button onPress={getMealData} title="get meal plan">
                   </Button>
               </ScrollView>
               {mealData && <FoodDetails mealData={mealData} />}

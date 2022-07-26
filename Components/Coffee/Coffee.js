@@ -16,6 +16,7 @@ export default function Reciepts() {
         fetchData();
     }, []);
 
+
     return (
         <ScrollView>
             <View style={{ alignItems: 'center', flexDirection: 'row',flexWrap: "wrap", backgroundColor: 'black' }}>
