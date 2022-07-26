@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Box, FlatList, Center, NativeBaseProvider, Text , Image} from "native-base";
+import { Box, FlatList, Center, NativeBaseProvider, Image} from "native-base";
 
 export default function Reciepts() {
   const [data, setData] = useState([]);
@@ -10,7 +10,6 @@ export default function Reciepts() {
     const data = await resp.json();
     setData(data);
     setLoading(false);
-    console.log(data)
   };
 
   useEffect(() => {
@@ -20,7 +19,7 @@ export default function Reciepts() {
   const renderItem = ({ item }) => {
     return (
       <Box px={5} py={2} rounded="md" bg="primary.300" my={1}>
-        {item.title} {item.id}
+        {item.title}  {item.cookTime + " minutes"} {item.tags}
         <Image style={{ width : 200, height : 200}} alt="food_img" source={{uri:item.photoUrl}}/>
       </Box>
     );
