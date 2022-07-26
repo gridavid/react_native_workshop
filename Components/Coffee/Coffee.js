@@ -6,7 +6,7 @@ export default function Reciepts() {
     const [loading, setLoading] = useState(true);
 
     const fetchData = async () => {
-        const resp = await fetch("https://api.sampleapis.com/coffee/hot");
+        const resp = await fetch("https://api.sampleapis.com/recipes/recipes");
         const data = await resp.json();
         setData(data);
         setLoading(false);
@@ -16,7 +16,10 @@ export default function Reciepts() {
         fetchData();
     }, []);
 
-
+   
+if(loading) {
+  return <Text>Loading</Text>
+}
     return (
         <ScrollView>
             <View style={{ alignItems: 'center', flexDirection: 'row',flexWrap: "wrap", backgroundColor: 'black' }}>
@@ -24,7 +27,7 @@ export default function Reciepts() {
                     data.map((item, index) => {
                         return (<View key={index} style={styles.card}>
                             <Text style={styles.title}>{item.title}</Text>
-                            <Image style={styles.image} alt="food_img" source={{ uri: item.image }} />
+                            <Image style={styles.image} alt="food_img" source={{ uri: item.photoUrl }} />
                         </View>)
                     })
                 }
