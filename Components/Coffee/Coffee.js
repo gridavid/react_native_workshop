@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { StyleSheet, View, Image, Text, ScrollView, Dimensions } from 'react-native';
 
-export default function Reciepts() {
+export default function Coffee() {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
 
