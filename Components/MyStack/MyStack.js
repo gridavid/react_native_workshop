@@ -5,18 +5,19 @@ import Home from "../Home/Home";
 import Food from "../Food/Food";
 import Wines from '../Wines/Wines';
 import MealPlanComp from '../MealPlan/MealPlanComp';
+import Header from '../Header/Header';
 
 const Stack = createStackNavigator();
 
 export default function MyStack(){
     return(
         <Stack.Navigator>
-            <Stack.Screen name = "Home" component = {Home} />
-            <Stack.Screen name = "Receipts" component = {Receipts} />
-            <Stack.Screen name = "Coffee" component = {Coffee} />
-            <Stack.Screen name = "Food" component = {Food} />
-            <Stack.Screen name = "Meal Plan" component = {MealPlanComp} />
-            <Stack.Screen name = "Wines" component = {Wines} />
+            <Stack.Screen options={{headerTitle: (props) => <Header {...props} />}}  name = "Home" component = {Home} />
+            <Stack.Screen options={{headerTitle: (props) => <Header {...props} />}}  name = "Receipts" component = {Receipts} />
+            <Stack.Screen options={{headerTitle: (props) => <Header {...props} />}}  name = "Coffee" component = {Coffee} />
+            <Stack.Screen options={{headerTitle: (props) => <Header {...props} />}}  name = "Food" component = {Food} />
+            <Stack.Screen options={{headerTitle: (props) => <Header {...props} />}}  name = "Meal Plan" component = {MealPlanComp} />
+            <Stack.Screen options={{headerTitle: (props) => <Header {...props} />}}  name = "Wines" component = {Wines} />
         </Stack.Navigator>
     )
 }
