@@ -9,7 +9,7 @@ const Header = () => {
         <View style={styles.header}>
             <View style={styles.main}>
                 <View style={styles.logo}>
-                    <Image style={{width:50, height: 50}} source={require("../../assets/icon.png")} />
+                    <Image style={{width:50, height: 50}} source={require("../../assets/logo.png")} />
                 </View>
                 <View style={styles.burger_menu}>
                     <Feather  onPress={() =>{
