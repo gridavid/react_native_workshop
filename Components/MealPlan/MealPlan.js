@@ -3,7 +3,7 @@ import {  View , Text , Image } from 'react-native';
 
 
 
-export default function Food({ meal }) {
+export default function MealPlan({ meal }) {
   const [imageUrl, setImageUrl] = useState("");
   useEffect(() => {
     fetch(

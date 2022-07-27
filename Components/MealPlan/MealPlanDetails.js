@@ -1,8 +1,8 @@
 import React from "react";
-import Food from "./Food";
+import Food from "./MealPlan";
 import {  View , Text } from 'react-native';
 
-export default function FoodDetails({mealData}) {
+export default function MealPlanDetails({mealData}) {
     const nutrients = mealData.nutrients;
 
     return (

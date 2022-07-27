@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import FoodDetails from "./FoodDetails";
+import FoodDetails from "./MealPlanDetails";
 import {  ScrollView , Button } from 'react-native';
 
-export default function FoodComp()  {
+export default function MealPlanComp()  {
     const [mealData, setMealData] = useState(null);
     const [calories, setCalories] = useState(2000);
 
