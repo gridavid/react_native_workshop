@@ -43,12 +43,13 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         borderColor: '#f7eb45',
         borderWidth: 5,
+        marginTop: 20,
     },
     card: {
         borderRadius: 20,
-
+        marginTop: 30,
         width: Dimensions.get('window').width / 2 - 30,
-        height: 300,
+        height: 200,
         marginHorizontal:15,
 
     },
@@ -56,7 +57,8 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         fontSize: 20,
         fontWeight: 'bold',
-
-        color: "white"
+        maxHeight: 8,
+        color: "white",
+        
     }
 })

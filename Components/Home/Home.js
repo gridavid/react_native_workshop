@@ -3,9 +3,6 @@ import { View, Text, TouchableOpacity, Dimensions, StyleSheet } from "react-nati
 export default function Home({ navigation }) {
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Food'); }}>
-                <Text style={styles.btntxt}> Food</Text>
-            </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Coffee'); }}>
                 <Text style={styles.btntxt}> Coffee</Text>
             </TouchableOpacity>
