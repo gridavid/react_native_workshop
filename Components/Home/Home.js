@@ -1,20 +1,9 @@
 import { View, Text, TouchableOpacity, Dimensions, StyleSheet } from "react-native"
 
-export default function Home({ navigation }) {
+export default function Home() {
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Coffee'); }}>
-                <Text style={styles.btntxt}> Coffee</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Receipts'); }}>
-                <Text style={styles.btntxt}> Receipts</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Meal Plan'); }}>
-                <Text style={styles.btntxt}> Meal Plan</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Wines'); }}>
-                <Text style={styles.btntxt}>Wines</Text>
-            </TouchableOpacity>
+1
         </View>
     )
 }
