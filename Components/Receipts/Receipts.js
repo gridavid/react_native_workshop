@@ -27,7 +27,7 @@ if(loading) {
                     data.map((item, index) => {
                         return (<View key={index} style={styles.card}>
                             <Text style={styles.title}>{item.title}</Text>
-                            <Image style={styles.image} alt="food_img" source={{ uri: item.photoUrl }} />
+                            <Image style={styles.image} alt="food_img" source={{ uri: item?.photoUrl }} />
                         </View>)
                     })
                 }
@@ -55,10 +55,11 @@ const styles = StyleSheet.create({
     },
     title: {
         alignSelf: 'center',
-        fontSize: 20,
+        fontSize: 19,
         fontWeight: 'bold',
-        maxHeight: 8,
+        maxHeight: 22,
         color: "white",
         
     }
 })
+
