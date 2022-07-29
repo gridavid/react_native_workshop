@@ -24,7 +24,7 @@ export default function Coffee() {
                     data.map((item, index) => {
                         return (<View key={index} style={styles.card}>
                             <Text style={styles.title}>{item.title}</Text>
-                            <Image style={styles.image} alt="food_img" source={{ uri: item.image }} />
+                            <Image style={styles.image} alt="food_img" source={{ uri: item?.image }} />
                         </View>)
                     })
                 }
@@ -40,20 +40,24 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         borderColor: '#f7eb45',
         borderWidth: 5,
+        marginTop: 20,
     },
     card: {
         borderRadius: 20,
-
+        marginTop: 30,
         width: Dimensions.get('window').width / 2 - 30,
-        height: 300,
+        height: 200,
         marginHorizontal:15,
 
     },
     title: {
         alignSelf: 'center',
-        fontSize: 20,
+        fontSize: 19,
         fontWeight: 'bold',
-
-        color: "white"
+        maxHeight: 22,
+        color: "white",
+        
     }
 })
+
+
